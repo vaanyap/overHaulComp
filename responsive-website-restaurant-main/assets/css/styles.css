@@ -1,11 +1,124 @@
-/*===== GOOGLE FONTS =====*/
+html{
+  background-color: rgb(0,0,0);
+  
+}
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lobster/v28/neILzCirqoswsqX9zo-mM4MwWJXNqA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+h1{
+  color: white;
+  padding-right: 10%;
+
+}
+h2{
+  color: white;
+}
+h6{
+  font-weight: normal; 
+  /*font-family: 'Lobster';*/
+  font-size: 1.75rem;
+  text-align: center;
+  color: white;
+
+
+}
+.search{
+  padding-left: 1050px;
+}
+input{
+  font-size: 25px;
+  border-radius: 15px;
+  border-color: orange;
+}
+.nav a{
+  
+  display:flexbox;
+  width: 100px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color:white;
+  align-items: center;
+
+}
+img {
+  display: block;
+  height:500px;
+  width :500px;
+  margin-left: 60%;
+  
+}
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+/* cyrillic-ext */
+
+/* cyrillic */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lobster/v28/neILzCirqoswsqX9zoamM4MwWJXNqA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lobster/v28/neILzCirqoswsqX9zo2mM4MwWJXNqA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lobster/v28/neILzCirqoswsqX9zoymM4MwWJXNqA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lobster/v28/neILzCirqoswsqX9zoKmM4MwWJU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*===== GOOGLE FONTS =====
 @import url("https://fonts.googleapis.com/css2?family=Lobster:wght@400;500;600&display=swap");
 
-/*===== VARIABLES CSS =====*/
+/*===== VARIABLES CSS =====
+
+.home__data{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+
+}
+  
 :root {
   --header-height: 3rem;
 
-  /*========== Colors ==========*/
+  /*========== Colors ==========
   --first-color: #069C54;
   --first-color-alt: #048654;
   --title-color: #393939;
@@ -14,7 +127,7 @@
   --body-color: #FBFEFD;
   --container-color: #FFFFFF;
 
-  /*========== Font and typography ==========*/
+  /*========== Font and typography ==========
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
@@ -24,11 +137,11 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
+  /*========== Font weight ==========
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes ==========*/
+  /*========== Margenes ==========
   --mb-1: .5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
@@ -36,7 +149,7 @@
   --mb-5: 2.5rem;
   --mb-6: 3rem;
 
-  /*========== z index ==========*/
+  /*========== z index ==========
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -54,15 +167,17 @@
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none; /* Hidden by default 
+  position: fixed; /* Stay in place 
+  z-index: 1; /* Sit on top 
+  padding-top: 100px; /* Location of the box 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; /* Full width 
+  height: 100%; /* Full height 
+  overflow: auto; /* Enable scroll if needed 
+  background-color: rgb(0,0,0); /* Fallback color 
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity 
+
 }
+*/

@@ -175,8 +175,10 @@ input{
   padding-left: 50px;
   margin-left: 25%;
 }
-button.myBtn{
+.modal{
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 .footer__content{
   display:flex;

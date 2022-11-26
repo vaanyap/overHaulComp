@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/responsive-website-restaurant-main/assets/css/styles.css">
         
         <title>Euclid's Cafe</title>
+        <script src="assets/js/main.js"></script>
     </head>
     <body>
         <div class="over">
@@ -27,15 +28,7 @@
                 <a href="#menu" class="navLink">Menu</a>
                 <a href="#contact" class="navLink">Contact Us</a>
                 <i class='bx-bx-moon-change-theme' id="theme-button"></i>
-                <div class="search">
-                    <label for="StudentSearch">Search</label>
-                    <input type="text" size="15" placeholder="Search" id="searching" name="search">	
-
-                </div>
-                	
-
             </div>
-            <div class="searchingMenu"><br>
                 
             </div><br>
 
@@ -45,13 +38,13 @@
                     -->  
             
             
-
+            <br><br>
             <main class="l-main">
                 <!--========== HOME ==========-->
                 <section class="#home" id="home">
                     <div class="home__container bd-container bd-grid">
                         <div class="home__data">
-                            <h1 class="home__title">Tasty food</h1>
+                            <i><h1 class="home__title">Tasty food</h1></i>
                             <h2 class="home__subtitle">Try the best food of <br> the week.</h2>
                         </div>
                         <div class="humble">
@@ -63,12 +56,11 @@
                 </section>
                 
                 <!--========== ABOUT ==========-->
-                <section class="about section bd-container" id="about">
+                <section class="#about" id="about">
                     <div class="about__container  bd-grid">
                         <div class="about__data">
-                            <span class="section-subtitle about__initial">About us</span>
                             <h2 class="section-title about__initial">We cook the best <br> tasty food</h2>
-                            <p class="about__description">We cook food</p>
+                            <!--<p class="about__description">We cook food</p>-->
                             <a href="#" class="button">Explore history</a>
                         </div>
 
@@ -77,7 +69,7 @@
                 </section>
 
                 <!--========== SERVICES ==========-->
-                <section class="services section bd-container" id="services">
+                <section class="#services" id="services">
                     <span class="section-subtitle">Offering</span>
                     <h2 class="section-title">Our amazing services</h2>
 
@@ -86,7 +78,7 @@
                             <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
                                 
                             </svg>
-                            <h3 class="services__title">Excellent food</h3>
+                            <h3 class="services__title" >Excellent food</h3>
                             <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
                         </div>
 
@@ -100,15 +92,15 @@
                 </section>
 
                 <!--========== MENU ==========-->
-                <section class="menu section bd-container" id="menu">
+                <br><br><br><section class="menu section bd-container" id="menu">
                     <span class="section-subtitle">Special</span>
                     <h2 class="section-title">Menu of the week</h2>
 
-                    <div class="menu__container bd-grid">
+                    <div class="menu__container">
                         <div class="menu__content">
-                            <img src="assets/img/plate1.png" alt="" class="menu__img">
+                            <img src="assets/img/plate1.png" alt="" class="menu__img"><br>
                             <h3 class="menu__name">Barbecue salad</h3>
-                            <span class="menu__detail">Delicious dish</span>
+                            <span class="menu__detail">Delicious dish</span><br>
                             <span class="menu__preci">$22.00</span>
                             <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
                         </div>
@@ -162,10 +154,11 @@
 
                 <!--========== CONTACT US ==========-->
                 <section class="contact section bd-container" id="contact">
-                    <div class="contact__container bd-grid">
+                    <div class="contact__container-bd-grid">
                         <div class="contact__data">
-                            <span class="section-subtitle contact__initial">Let's talk</span>
-                            <h2 class="section-title contact__initial">Contact us</h2>
+                            
+                            <h2 class="section-title-contact__initial">Contact us</h2>
+                            <p class="section-subtitle-contact__initial">Let's talk</p>
                             <p class="contact__description">If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.</p>
                         </div>
 
@@ -210,7 +203,7 @@
                     </div>
 
                     <div class="footer__content">
-                        <h3 class="footer__title">Adress</h3>
+                        <h3 class="footer__title">Address</h3>
                         <ul>
                             <li>Lima - Peru</li>
                             <li>Jr Union #999</li>
@@ -226,7 +219,7 @@
             </footer>
 
             <!--========== MAIN JS ==========-->
-            <script src="assets/js/main.js"></script>
+            
         </div>
     </body>
 </html>

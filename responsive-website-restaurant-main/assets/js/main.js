@@ -7,19 +7,19 @@ const showMenu = (toggleId, navId) =>{
     if(toggle && nav){
         toggle.addEventListener('click', ()=>{
             // We add the show-menu class to the div tag with the nav__menu class
-            nav.classList.toggle('show-menu')
+            nav.classList.toggle('menu')
         })
     }
 }
 showMenu('nav-toggle','nav-menu')
 
 /*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.getElementById('.nav__link')
+const navLink = document.getElementById('.navLink')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
+    navMenu.classList.remove('menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 

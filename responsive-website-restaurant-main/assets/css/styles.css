@@ -25,6 +25,9 @@ h2{
   font-size: 2.0rem;
   text-align: center;
 }
+h2.section-title{
+  color: orange;
+}
 h3{
   color: orange;
   font-size: 2.0rem;
@@ -55,13 +58,26 @@ h6{
   align-items: center;
 
 }
-img {
+img.home__img{
   display: block;
   height:500px;
   width :500px;
   margin-left: 32%;
+}
+img.about__img{
+  display: block;
+  height:500px;
+  width :500px;
+  margin-left: 32%;
+}
+img.menu_img {
+  display: block;
+  height:500px;
+  width :500px;
   
 }
+
+
 a:link { text-decoration: none; }
 
 
@@ -126,6 +142,9 @@ p{
   text-align: center;
 }
 .menu__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   text-align: center;
   font-size: 1.5rem;
 
@@ -152,13 +171,60 @@ p{
   align-items: center;
 
 }
+input{
+  padding-left: 50px;
+  margin-left: 25%;
+}
+button.myBtn{
+  align-items: center;
+}
 .footer__content{
+  display:flex;
+ 
+  list-style-type: none;
+  width: 50%;
+  margin: 40%;
+  font-size: 1.5rem;
   color:white;
+  align-items: center;
 
 }
 .contact__container-bd-grid{
   color:white;
 
+}
+h2.section-title-contact__initial{
+  color: orange;
+  font-size: 2.5rem;
+}
+img.bx{
+  height:20px;
+}
+
+img.app__store{
+  
+  display: inline-flexbox;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  margin-left: 20%;
+  margin-right: auto;
+  height: fit-content; 
+  width: fit-content;
+  color:white;
+  
+}
+img.app_img{
+  height: 10; 
+  width: 50;
+  margin-left: 30%;
+
+}
+
+.foot{
+  
+  background-color: orange;
 }
 
 /*===== GOOGLE FONTS =====
